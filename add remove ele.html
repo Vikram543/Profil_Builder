@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add and Remove Elements</title>
+</head>
+<body>
+    <button id="addButton">Add Element</button>
+    <button id="removeButton">Remove Element</button>
+    <div id="elementContainer"></div>
+
+    <script>
+        const elementContainer = document.getElementById('elementContainer');
+        const addButton = document.getElementById('addButton');
+        const removeButton = document.getElementById('removeButton');
+
+        let elementCount = 0;
+
+        addButton.addEventListener('click', () => {
+            const newElement = document.createElement('div');
+            newElement.className = 'element';
+            newElement.innerText = `Element ${elementCount + 1}`;
+            elementContainer.appendChild(newElement);
+            elementCount++;
+        });
+
+        removeButton.addEventListener('click', () => {
+            if (elementCount > 0) {
+                elementContainer.removeChild(elementContainer.lastChild);
+                elementCount--;
+            }
+        });
+    </script>
+</body>
+</html>

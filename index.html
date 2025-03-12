@@ -1,0 +1,137 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="blue"></div>
+  <div class="mainbox">
+
+
+
+    <div class="dp">
+      <img src="DP.jpg" alt="Profile Photo" class="img">
+    </div>
+
+    <p class="name" id="outputArea">
+      Vikram Devadiga
+    </p>
+
+    <div class="container">
+      <div class="add">
+        <img src="https://cdn-icons-png.flaticon.com/128/3916/3916862.png" alt="Location" class="loc">
+        <p id="outputArea2">Mumbai Maharashtra India.</p>
+      </div>
+    </div><br><br>
+
+
+
+    <div class="class1">
+      <div class="media"> <a href="www.youtube.com.........">
+          <img src="https://cdn-icons-png.flaticon.com/128/2099/2099199.png" alt="email" class="Social" />
+          <div class="em">devadigavikram1@gmail.com</div>
+        </a></div>
+    </div>
+
+    <div class="class2">
+      <div class="media"> <a href="www.youtube.com">
+          <img src="https://cdn-icons-png.flaticon.com/128/25/25377.png" alt="email" class="Social" />
+          <div class="em">7977789337</div>
+        </a></div>
+    </div>
+
+    <div class="class3">
+      <div class="media"><a
+          href="https://www.linkedin.com/in/vikram-devadiga-a2552228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          id="dynamicLink">
+          <img src="https://cdn-icons-png.flaticon.com/128/3536/3536569.png" alt="email" class="Social" />
+          <div class="em">Vikram Devadiga</div>
+        </a> </div>
+    </div>
+
+    <div class="class4">
+      <div class="media"><a href="https://t.me/Vicky3451" id="telegramLink">
+          <img src="https://cdn-icons-png.flaticon.com/128/3536/3536705.png" alt="email" class="Social" />
+          <div class="em">@Vicky3451</div>
+        </a> </div>
+    </div>
+
+    <div class="class5">
+      <div class="media"> <a href="/Business club .pdf" download>
+          <img src="https://cdn-icons-png.flaticon.com/128/2874/2874797.png" alt="email" class="Social" />
+          <div class="em">Download Resume</div>
+        </a> </div>
+    </div>
+
+    <div class="class6">
+      <div class="media"> <a href="unknown.html">
+          <img src="https://cdn-icons-png.flaticon.com/128/7613/7613892.png" alt="email" class="Social" />
+          <div class="em">View My Projects</div>
+        </a> </div>
+    </div>
+
+    <div class="class7">
+      <div class="media m2"> <a href="/unknown.html">
+          <img src="/buss.png" alt="email" class="Social" />
+          <div class="em1">View Business Profile</div>
+        </a> </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Devadiga. All rights reserved.</p>
+  </footer>
+
+
+
+  <button id="popup-button" onclick="togglePopup()" class="1button">Open Control Panel</button>
+
+
+  <div class="popup-menu" id="popup-menu">
+    <ul>
+
+      <li> <input type="button" value="Change Profile Picture" onclick="getImageAndDisplay()"></li>
+      <hr>
+      <li> <input type="button" value="Change Person Name" onclick="getAndDisplayInput()"></li>
+      <hr>
+      <li> <input type="button" value="Change Person Address" onclick="getAndDisplayInput2()"></li>
+      <hr>
+      <li> <label for="colorPicker">Change Banner Colour: </label> <input type="color" id="colorPicker" value="#4958F4">
+      </li>
+      <hr>
+      <li>
+        <input type="text" id="linkInput" placeholder="Enter a URL">
+        <button id="applyLinkButton" class="2button">Apply Link</button>
+      </li>
+      <hr>
+      <li>
+
+        <label><input type="checkbox" id="checkbox1"> Email</label><br>
+        <label><input type="checkbox" id="checkbox2"> Phone</label><br>
+        <label><input type="checkbox" id="checkbox3"> LinkedIn</label><br>
+        <label><input type="checkbox" id="checkbox4"> Telegram</label><br>
+        <label><input type="checkbox" id="checkbox5"> Resume</label><br>
+        <label><input type="checkbox" id="checkbox6"> Projects</label><br>
+        <label><input type="checkbox" id="checkbox7"> Business Profile</label><br>
+
+        <button onclick="applyChanges()" class="2button">Apply Changes</button>
+      </li>
+      <li>
+
+      </li>
+    </ul>
+  </div>
+
+
+  <div style="margin-bottom: 20px;"></div>
+</body>
+
+</html>

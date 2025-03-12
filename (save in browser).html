@@ -1,0 +1,17 @@
+<script>// Load previously saved data on page load
+window.onload = function () {
+const savedData = localStorage.getItem('userData');
+if (savedData) {
+document.getElementById('editableInput').value = savedData;
+}
+}
+
+// Handle the "Save" button click
+document.getElementById('saveButton').addEventListener('click', function() {
+const userInput = document.getElementById('editableInput').value;
+
+// Save the user input to local storage
+localStorage.setItem('userData', userInput);
+});</script>
+    <input type="text" id="editableInput">
+    <button id="saveButton">Save</button>

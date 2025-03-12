@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .blue {
+            color: blue;
+            /* Add any other default styles for the "blue" class here */
+        }
+    </style>
+</head>
+<body>
+    <div class="blue">This is a blue element.</div>
+    <input type="color" id="colorPicker">
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const blueElement = document.querySelector(".blue");
+            const colorPickerInput = document.getElementById("colorPicker");
+
+            colorPickerInput.addEventListener("input", function () {
+                const selectedColor = colorPickerInput.value;
+                blueElement.style.color = selectedColor;
+            });
+        });
+    </script>
+</body>
+</html>
